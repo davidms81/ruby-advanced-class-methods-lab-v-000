@@ -46,6 +46,9 @@ class Song
     song_file = filename.split(" - ")
     artist_name = song_file[0]
     song_name = song_file[1].gsub('.mp3', '')
+    song = self.new
+    song.name = song_name
+    song.artist = artist_name
   end
 
 end
